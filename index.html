@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Monoton">
+  </head>
+
+  <body class="nobg">
+
+  	<!-- Preloader -->
+  	<div id="preloader">
+  		<div id="status">&nbsp;</div>
+  	</div>
+
+  	<!-- Home fullbody autoplay background video -->
+  	<div id="home" class="home-wrap video cushion">
+
+  			<!-- Logo and text -->
+  			<p class="text-white monoton" id="fittext1">2014 Rooftop Fest</p>
+        <a href="http://eventbrite.com/" class="button big outline margin-bottom-big">Get Your Tickets</a>
+
+  	</div>
+
+  	<!-- Background with youtube video -->
+  	<div class="video-container">
+  		<a id="video" class="fullscreen-video" data-property="{videoURL:'https://www.youtube.com/watch?v=39ZgI27L6iU'}">The Video</a>
+  	</div>
+
+  	<!-- Background image to display when the video doesn't play anymore -->
+  	<div style="background-image: url('img/rooftop.jpg');" class="fullscreen-img"></div>
+
+  	<!-- Javascripts -->
+  	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/main.js"></script>
+
+  	<!-- FitText -->
+    <script type="text/javascript">
+      $("#fittext1").fitText(1.5);
+    </script>
+
+    <!-- Preloader -->
+  	<script>
+  		//<![CDATA[
+  		$(window).load(function() { // makes sure the whole site is loaded
+  			$('#status').fadeOut(); // will first fade out the loading animation
+  				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  			$('body').delay(350).css({'overflow-y':'visible'});
+  		})
+  		//]]>
+  	</script>
+
+  </body>
+</html>

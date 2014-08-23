@@ -96,6 +96,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  color: #ffffff;
+}
+
+#text {
+  display: inline-block;
+  width: 70%;
+}
+
 #preloader {
 position: fixed;
 top: 0;
@@ -139,9 +148,6 @@ margin: -100px 0 0 -100px;
 }
 
 /* Text colors */
-.text-white {
-	color: #ffffff;
-}
 .text-green {
   color: #98af12;
 }
@@ -254,7 +260,10 @@ margin-bottom: 10px;
 
 /* Typography */
 .monoton {
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.lato {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Buttons */
@@ -306,6 +315,7 @@ a .icon.outline:hover {
 
 .cushion {
   padding-left: 50px;
+  padding-right: 150px;
 }
 
 /* ==========================================================================

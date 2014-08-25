@@ -16,7 +16,6 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,700">
   </head>
 
@@ -28,15 +27,15 @@
   	</div>
 
   	<!-- Home fullbody autoplay background video -->
-  	<div id="home" class="home-wrap video cushion">
+  	<div id="home" class="home-wrap video">
 
   			<!-- Logo and text -->
   			<div id="text">
-          <p class="monoton" id="fittext1">UPark 2014</p>
+          <a href="http://upark2014.eventbrite.com/"><image src="img/upark-logo.png" class="img-responsive margin-top"/></a>
           <p class="lato" id="fittext2">Join Rooftop Alliance for Sacramento's 2nd Annual Rooftop Pop-up Park event: UPark (UP + Park) 2014! We're transforming a Midtown parking garage into a pop-up urban park for a garden party you won’t want to miss.</p>
           <p class="lato" id="fittext3"><strong>Saturday, September 20</strong> // 8 a.m. to midnight</p>
           <p class="lato" id="fittext4"><strong>Sunday, September 21</strong> // 8 a.m. to 2 p.m.</p>
-          <p class="lato" id="fittext5"><strong>Top of the parking deck</strong> @ 20th and L Streets
+          <p class="lato" id="fittext5"><strong>Top of the parking deck</strong> @ 20th &amp; L Streets
           <br><strong><a href="https://twitter.com/search?f=realtime&q=%23MidtownSac&src=typd"#MidtownSac</strong></p>
           <a href="http://upark2014.eventbrite.com/" class="button big outline margin-bottom-big">Get Your Tickets</a>
         </div>
@@ -60,8 +59,7 @@
 
   	<!-- FitText -->
     <script type="text/javascript">
-      $("#fittext1").fitText(0.7);
-      $("#fittext2").fitText(2.5);
+      $("#fittext2").fitText(2.5, { minFontSize: '20px', maxFontSize: '120px' });
       $("#fittext3").fitText(2.5);
       $("#fittext4").fitText(2.5);
       $("#fittext5").fitText(2.5);

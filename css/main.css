@@ -103,6 +103,7 @@ body {
 #text {
   display: inline-block;
   width: 70%;
+  margin-left: 50px;
 }
 
 #preloader {
@@ -125,6 +126,12 @@ background-image: url(../img/status.gif);
 background-repeat: no-repeat;
 background-position: center;
 margin: -100px 0 0 -100px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* The fullscreen container */
@@ -311,11 +318,6 @@ a .icon.outline:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.cushion {
-  padding-left: 50px;
-  padding-right: 150px;
 }
 
 /* ==========================================================================
